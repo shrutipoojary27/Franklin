@@ -1,4 +1,5 @@
 .Rhist*
+.RD*
 sc*
 *~
 *.csv
