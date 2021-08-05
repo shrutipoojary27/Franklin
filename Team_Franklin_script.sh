@@ -1,4 +1,3 @@
- 
 #!/bin/bash  # This is a shebang to initialise the script by calling on bash interpreter
 
 #the command below clones the team Franklin repo
@@ -19,3 +18,5 @@ for i in $(ls Frank*)
 do
 	./$i | awk -F ',' '{OFS="\t";print $1,$2,$3,$4,$5}' >> Team_Franklin.csv
 done
+
+python *py | awk -F ',' '{OFS="\t";print $1,$2,$3,$4,$5,$6}' >> Team_Franklin.csv
