@@ -18,4 +18,7 @@ do
 	./$i | awk -F ',' '{OFS="\t";print $1,$2,$3,$4,$5,$6}' >> Team_Franklin.csv
 done
 
-python *.py | awk -F ',' '{OFS="\t";print $1,$2,$3,$4,$5,$6}' >> Team_Franklin.csv
+for j in $(ls *.py)
+do
+    python j | awk -F ',' '{OFS="\t";print $1,$2,$3,$4,$5,$6}' >> Team_Franklin.csv
+done
