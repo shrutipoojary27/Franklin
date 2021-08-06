@@ -20,5 +20,5 @@ done
 
 for j in $(ls *.py)
 do
-    python j | awk -F ',' '{OFS="\t";print $1,$2,$3,$4,$5,$6}' >> Team_Franklin.csv
+    python $j | awk -F ',' '{OFS="\t";print $1,$2,$3,$4,$5,$6}' >> Team_Franklin.csv
 done
